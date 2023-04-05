@@ -37,3 +37,20 @@ app.get('/app/rpsls', (req, res) => {
 app.get('/app/rps/play', (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.query.shot))).end();
 })
+
+/**
+ * URLEncoded
+ * Note: This is a GET
+ * Example: http://localhost:5000/app/rps/play?shot=spock
+ */
+app.get('/app/rpsls/play', (req, res) => {
+    res.status(200).send(JSON.stringify(rpsls(req.query.shot))).end();
+})
+
+/**
+ * JSON
+ * Note: This is a POST
+ */
+app.post('/app/rps/play', (req, res) => {
+    res.status(200).send(JSON.stringify(rps(req.body.shot))).end();
+})

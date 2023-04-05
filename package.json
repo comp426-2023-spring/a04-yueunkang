@@ -1,0 +1,25 @@
+{
+    "name": "a04-yueunkang",
+    "version": "1.0.0",
+    "description": "Stand up a web API using express",
+    "main": "server.js",
+    "scripts": {
+      "test": "node server.js --port=5555"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/comp426-2023-spring/a04-yueunkang.git"
+    },
+    "author": "Yueun Kang",
+    "license": "GPL-3.0-only",
+    "bugs": {
+      "url": "https://github.com/comp426-2023-spring/a04-yueunkang/issues"
+    },
+    "homepage": "https://github.com/comp426-2023-spring/a04-yueunkang#readme",
+    "dependencies": {
+      "express": "^4.18.2",
+      "minimist": "^1.2.8"
+    },
+    "type": "module"
+  }
+  

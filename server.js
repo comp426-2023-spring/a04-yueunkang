@@ -46,9 +46,6 @@ app.get('/app/rpsls/play/:shot', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.params.shot))).end();
 })
 
-/**
- * Default (non-existent) endpoint
- */
 app.all('*', (req, res) => {
     res.status(404).send('404 NOT FOUND').end();
 })
